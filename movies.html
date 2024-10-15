@@ -1,0 +1,123 @@
+<html>
+ <head>
+  <title>Trending Now</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .filters {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .filter {
+            background-color: #333;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .filter i {
+            margin-left: 5px;
+        }
+        .movies {
+            display: flex;
+            gap: 20px;
+        }
+        .movie {
+            position: relative;
+            width: 150px;
+        }
+        .movie img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .movie .number {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .movie .label {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="title">Trending Now</div>
+   <div class="filters">
+    <button class="filter">Indonesia <i class="fas fa-caret-down"></i></button>
+    <button class="filter">Movies <i class="fas fa-caret-down"></i></button>
+   </div>
+   <div class="movies">
+    <div class="movie">
+     <img alt="Movie poster for 'Do You See What I See'" height="225" src="https://storage.googleapis.com/a1aa/image/ExmOK8K144KqK5NAihO7e4GNigBUldBjZhv1AX8ifofnfpbOB.jpg" width="150"/>
+     <div class="number">1</div>
+     <div class="label">Recently Added</div>
+    </div>
+    <div class="movie">
+     <img alt="Movie poster for 'Sosok Ketiga'" height="225" src="https://storage.googleapis.com/a1aa/image/QwB6r0o9UJaELtp8TfUFLeQghukFnWmmh5D4kViexlOlfpbOB.jpg" width="150"/>
+     <div class="number">2</div>
+     <div class="label">Recently Added</div>
+    </div>
+    <div class="movie">
+     <img alt="Movie poster for 'Respat'" height="225" src="https://storage.googleapis.com/a1aa/image/qpf65vRoy8yrEiXmXFGLk6bJXWzzodzuVeaBnOaT9ou1f0NnA.jpg" width="150"/>
+     <div class="number">3</div>
+     <div class="label">Recently Added</div>
+    </div>
+    <div class="movie">
+     <img alt="Movie poster for 'The Garfield Movie'" height="225" src="https://storage.googleapis.com/a1aa/image/hA9rLzI5UOb3IZaM9xlzCGbiaZgX0phCoI9Wr14E5Lm9nu5E.jpg" width="150"/>
+     <div class="number">4</div>
+     <div class="label">Recently Added</div>
+    </div>
+    <div class="movie">
+     <img alt="Movie poster for another movie" height="225" src="https://storage.googleapis.com/a1aa/image/LeGLSkhP4gyVUqL7bBelX18xhpG7XoD18MyGyVGxvedhfpbOB.jpg" width="150"/>
+     <div class="number">5</div>
+     <div class="label">Recently Added</div>
+    </div>
+   </div>
+   <div class="arrow">
+    <i class="fas fa-chevron-right"></i>
+   </div>
+  </div>
+ </body>
+</html>

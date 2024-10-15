@@ -2,24 +2,40 @@
 <head>
     <title>Netflix</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function signIn() {
+            window.location.href = 'signin.html';
+        }
+
+        function getStarted() {
+            var email = document.querySelector("input[type='email']").value;
+            if (email) {
+                alert("Email entered: " + email);
+            } else {
+                alert("Please enter your email.");
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="overlay"></div>
+
     <div class="container">
         <div class="logo">NETFLIX</div>
         <div class="language-select">
             <i class="fas fa-globe"></i> English
         </div>
-        <button class="sign-in-btn">Sign In</button>
+        <button class="sign-in-btn" onclick="signIn()">Sign In</button>
         <div class="main-content">
             <h1>Unlimited movies, TV shows, and more</h1>
-            <p>Starts at IDR 65,000. Cancel anytime. </p>
+            <p>Starts at IDR 70,000. Cancel anytime.</p>
             <p>Ready to watch? Enter your email to create or restart your membership.</p>
             <div class="email-form">
                 <input type="email" placeholder="Email address">
-                <button>Get Started <i class="fas fa-chevron-right"></i></button>
+                <button onclick="getStarted()">Get Started <i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
     </div>
 </body>
 </html>
+
